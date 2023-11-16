@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+	<meta charset="UTF-8">
+        <title> DAYSY - Bullet Journal </title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- SideBar-Menu CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
+    
+	<script>
+		$(document).ready(function(){
+			$(".hamburger .hamburger__inner").click(function(){
+			  $(".wrapper").toggleClass("active")
+			})
+
+			$(".top_navbar .fas").click(function(){
+			   $(".profile_dd").toggleClass("active");
+			});
+		})
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="top_navbar">
+    <div class="hamburger">
+       <div class="hamburger__inner">
+         <div class="one"></div>
+         <div class="two"></div>
+         <div class="three"></div>
+       </div>
+    </div>
+    <div class="menu">
+      <div class="logo">
+        DAYSY
+      </div>
+      <div class="right_menu">
+        <ul>
+          <li><i class="fas fa-user"></i>
+            <div class="profile_dd">
+               <div class="dd_item">Profile</div>
+               <div class="dd_item">Changer le Mot de passe</div>
+               <a href="login.html" class="dd_item">Quitter</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    
+  <div class="main_container">
+      <div class="sidebar">
+          <div class="sidebar__inner">
+            <div class="profile">
+              <div class="img">
+                <img src="img/pic.jpg" alt="profile_pic">
+              </div>
+              <div class="profile_info">
+                 <p>Bienvenue</p>
+                 <p class="profile_name">Lahoussine BASSI</p>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <a href="tableau_de_bord.html" class="active">
+                  <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                  <span class="title">Tableau de bord</span>
+                </a>
+              </li>
+              <li>
+                <a href="bullet_journal.html">
+                  <span class="icon"><i class="fa fa-address-book"></i></span>
+                  <span class="title">Bullet Journal</span>
+                </a>
+              </li>
+              <li>
+                <a href="meteo_du_jour.html">
+                  <span class="icon"><i class="fa fa-sun-o"></i></span>
+                  <span class="title">Météo du Jour</span>
+                </a>
+              </li>
+              <li>
+                <a href="Mes_challenges.html">
+                  <span class="icon"><i class="fa fa-gamepad"></i></span>
+                  <span class="title">Mes Challenges</span>
+                </a>
+              </li>
+              <li>
+                <a href="assistance.html">
+                  <span class="icon"><i class="fa fa-users"></i></span>
+                  <span class="title">Assistance</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="container">
+          
+</div>	
+
+</body>
+</html>
